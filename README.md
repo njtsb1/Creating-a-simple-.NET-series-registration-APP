@@ -1,21 +1,15 @@
 # Digital Innovation One - Prática .NET
 
-## Criando uma APP de cadastro em memória
+## Creating an in-memory registration APP
 
 [Slides](dio-dotnet-poo-lab-2.pdf)
 
-## Contato
+## Contact
 
-Eliézer Zarpelão
+Nivaldo Beirão
 
-Linkedin:  [br.linkedin.com/in/eliezerzarpelao](http://br.linkedin.com/in/eliezerzarpelao)
+Linkedin:  [br.linkedin.com/in/nivaldobeirao/](http://br.linkedin.com/in/nivaldobeirao/)
 
-WebSite:  [eliezerzarpelao.eti.br](https://eliezerzarpelao.eti.br)
+Lattes:  [http://lattes.cnpq.br/6981546718519567](http://lattes.cnpq.br/6981546718519567)
 
-Instagram:  [instagram.com/eliezerzarpelao](https://instagram.com/eliezerzarpelao)
-
-YouTube:  [youtube.com/channel/UC47RD-s-U6fpKTY0soIUn6g](https://www.youtube.com/channel/UC47RD-s-U6fpKTY0soIUn6g/featured?view_as=subscriber)
-
-Twitter:  [@eliezerzarpelao](https://twitter.com/eliezerzarpelao)
-
-Github:  [github.com/elizarp](https://github.com/elizarp)
+Github:  [https://github.com/njtsb1](https://github.com/njtsb1)
