@@ -1,4 +1,4 @@
-# Digital Innovation One - Prática .NET
+# Digital Innovation One - Practice .NET
 
 ## Creating an in-memory registration APP
 
