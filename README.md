@@ -1,8 +1,6 @@
-# Digital Innovation One - Practice .NET
+# Practice .NET
 
 ## Creating an in-memory registration APP
-
-[Slides](dio-dotnet-poo-lab-2.pdf)
 
 ## Contact
 
