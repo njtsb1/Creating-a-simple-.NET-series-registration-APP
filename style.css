@@ -1,0 +1,104 @@
+/* Variables */
+:root{
+  --bg: #ffffff;
+  --card: #f7f7fb;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --radius: 10px;
+  --glass: rgba(255,255,255,0.6);
+}
+
+[data-theme="dark"]{
+  --bg: #0b1220;
+  --card: #0f1724;
+  --text: #e6eef8;
+  --muted: #9aa6b2;
+  --accent: #60a5fa;
+  --glass: rgba(255,255,255,0.03);
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg), color-mix(in srgb, var(--bg) 95%, #000 5%));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  transition:background .25s ease, color .25s ease;
+}
+
+/* Topbar */
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 20px;
+  backdrop-filter: blur(6px);
+  background:var(--glass);
+  border-bottom:1px solid rgba(0,0,0,0.04);
+}
+.brand strong{font-size:1.05rem}
+.brand small{display:block;color:var(--muted);font-size:.75rem}
+
+/* Controls */
+.controls{display:flex;gap:10px;align-items:center}
+.lang-switch select{
+  padding:6px 8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);
+  background:transparent;color:var(--text);
+}
+.theme-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);
+  background:transparent;color:var(--text);cursor:pointer;
+}
+
+/* Layout */
+.container{max-width:980px;margin:28px auto;padding:0 18px}
+.hero{margin-bottom:18px}
+.hero h1{margin:0 0 6px;font-size:1.6rem}
+.hero p{margin:0;color:var(--muted)}
+
+/* Cards */
+.demo-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{
+  background:linear-gradient(180deg,var(--card), color-mix(in srgb, var(--card) 90%, #000 2%));
+  padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.06);
+}
+.card h2{margin:0 0 8px}
+.card p{margin:0 0 12px;color:var(--muted)}
+
+/* Form */
+label{display:block;font-size:.85rem;margin:8px 0 6px}
+input,select,textarea{
+  width:100%;padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);
+  background:transparent;color:var(--text);
+}
+textarea{resize:vertical}
+
+/* Buttons */
+.actions{display:flex;gap:8px;margin-top:12px}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:var(--text);cursor:pointer}
+.btn.primary{background:var(--accent);color:white;border:none;box-shadow:0 6px 12px rgba(37,99,235,0.12)}
+
+/* Series list */
+.series-list{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:8px}
+.series-item{display:flex;justify-content:space-between;align-items:flex-start;padding:10px;border-radius:8px;background:rgba(0,0,0,0.03)}
+[data-theme="dark"] .series-item{background:rgba(255,255,255,0.02)}
+.series-item .meta{font-size:.9rem;color:var(--muted)}
+.series-item .title{font-weight:600}
+.series-item button.small{padding:6px 8px;font-size:.85rem;border-radius:6px}
+
+/* Footer */
+.footer{margin-top:18px;color:var(--muted);text-align:center}
+
+/* Accessibility helpers */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Responsive */
+@media (max-width:520px){
+  .topbar{padding:12px}
+  .brand strong{font-size:1rem}
+}

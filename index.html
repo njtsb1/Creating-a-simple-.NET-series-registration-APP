@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DIO Series — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <strong data-i18n="appName">DIO Series</strong>
+      <small data-i18n="demo">Demo</small>
+    </div>
+
+    <div class="controls">
+      <div class="lang-switch">
+        <label for="lang" class="sr-only" data-i18n="selectLanguage">Select language</label>
+        <select id="lang" aria-label="Language selector">
+          <option value="en-US">EN</option>
+          <option value="pt-BR">PT</option>
+          <option value="es-ES">ES</option>
+        </select>
+      </div>
+
+      <button id="themeToggle" class="theme-btn" aria-pressed="false" title="Toggle theme">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+        <span class="sr-only" data-i18n="toggleTheme">Toggle theme</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-i18n="welcome">Welcome to DIO Series</h1>
+      <p data-i18n="intro">A minimal front-end demo for your back-end project. Toggle theme and change language.</p>
+    </section>
+
+    <section class="demo-cards">
+      <article class="card">
+        <h2 data-i18n="listTitle">Series List</h2>
+        <p data-i18n="listDesc">This area would show series fetched from the API.</p>
+
+        <div class="actions">
+          <button id="btnFetch" class="btn primary" data-i18n="fetch">Fetch</button>
+          <button id="btnClear" class="btn" data-i18n="clear">Clear</button>
+        </div>
+
+        <ul id="seriesList" class="series-list" aria-live="polite"></ul>
+      </article>
+
+      <article class="card">
+        <h2 data-i18n="addTitle">Add Series</h2>
+        <form id="demoForm" autocomplete="off">
+          <label for="genre" data-i18n="genre">Genre</label>
+          <select id="genre" required>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Drama">Drama</option>
+          </select>
+
+          <label for="title" data-i18n="title">Title</label>
+          <input id="title" type="text" placeholder="" required />
+
+          <label for="year" data-i18n="year">Year</label>
+          <input id="year" type="number" min="1900" max="2100" />
+
+          <label for="description" data-i18n="description">Description</label>
+          <textarea id="description" rows="3"></textarea>
+
+          <div class="actions">
+            <button type="submit" class="btn primary" data-i18n="save">Save</button>
+            <button type="reset" class="btn" data-i18n="reset">Reset</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <small>
+        <span data-i18n="madeBy">Made by</span> <strong>NB90</strong> •
+        <span data-i18n="modeInfo">Theme and language preferences are saved locally.</span>
+      </small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
