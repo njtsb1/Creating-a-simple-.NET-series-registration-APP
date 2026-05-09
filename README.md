@@ -11,4 +11,3 @@ In this project we learned how to model your domain, how to use collection resou
 [LICENSE](./LICENSE)
 
 See [original repository](https://github.com/elizarp/dio-dotnet-poo-lab-2).
-
